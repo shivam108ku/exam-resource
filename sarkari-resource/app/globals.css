@@ -1,0 +1,73 @@
+@import "tailwindcss";
+
+:root {
+  --gov-blue: #003366;
+  --gov-blue-dark: #002244;
+  --gov-blue-light: #e6f0fa;
+  --saffron: #ff9933;
+  --green: #128807;
+  --bg-light: #ffffff;
+  --bg-offset: #f4f7fa;
+  --text-dark: #222222;
+  --text-muted: #555555;
+  --border-color: #d1d5db;
+}
+
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--bg-light);
+  color: var(--text-dark);
+  font-family: 'Inter', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Marquee scroll animation */
+@keyframes marquee {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
+.marquee-container {
+  overflow: hidden;
+  white-space: nowrap;
+  background: #fdf2e9;
+  border-bottom: 1px solid #fed7aa;
+}
+.marquee-text {
+  display: inline-block;
+  animation: marquee 25s linear infinite;
+  color: #c2410c;
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+/* Gov style headers & tables */
+.gov-header-top {
+  background: #0f172a;
+  color: #f8fafc;
+  font-size: 0.75rem;
+}
+.gov-card {
+  background: #ffffff;
+  border: 1px solid var(--border-color);
+  border-top: 4px solid var(--gov-blue);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+}
+
+.bg-cta-gradient {
+  background: linear-gradient(135deg, var(--gov-blue) 0%, #004488 100%);
+}
+
+.glow-saffron {
+  box-shadow: 0 4px 14px 0 rgba(0, 51, 102, 0.3);
+}
+
+/* Flag stripe details */
+.flag-stripe {
+  height: 4px;
+  background: linear-gradient(to right, #ff9933 33.3%, #ffffff 33.3%, #ffffff 66.6%, #128807 66.6%);
+}
