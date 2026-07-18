@@ -153,11 +153,12 @@ export default function Home() {
               </p>
             </div>
           </div>
-          <div className="flex items-center gap-4">
-            <div className="text-right hidden lg:block">
-              <p className="text-[10px] text-slate-400 uppercase font-semibold">Helpline Mail</p>
-              <a href="mailto:support@examresource.in" className="text-xs text-blue-900 font-bold hover:underline">
-                support@examresource.in
+          <div className="flex items-center gap-6">
+            <div className="text-right hidden sm:block">
+              <p className="text-[10px] text-slate-400 uppercase font-semibold">Chat Support</p>
+              <a href="https://wa.me/919355225925" target="_blank" rel="noopener noreferrer" className="text-xs text-green-700 font-bold hover:underline flex items-center gap-1.5 justify-end">
+                <span className="inline-block w-2 h-2 bg-emerald-500 rounded-full animate-pulse"></span>
+                <span>Chat on WhatsApp</span>
               </a>
             </div>
             <a 

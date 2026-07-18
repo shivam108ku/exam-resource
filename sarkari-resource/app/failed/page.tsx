@@ -23,10 +23,10 @@ export default function FailedPage() {
             ↩ Try Again
           </a>
 
-          <p className="text-slate-500 text-sm">
-            Need help?{" "}
-            <a href="mailto:support@examresource.in" className="text-orange-400 hover:underline">
-              Contact Support
+          <p className="text-slate-500 text-sm flex flex-col items-center gap-1">
+            <span>Need help with payment?</span>
+            <a href="https://wa.me/919355225925" target="_blank" rel="noopener noreferrer" className="text-orange-400 font-bold hover:underline flex items-center gap-1">
+              💬 WhatsApp Support: +91 9355225925
             </a>
           </p>
         </div>

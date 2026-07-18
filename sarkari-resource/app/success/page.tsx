@@ -44,8 +44,8 @@ function SuccessContent() {
         ) : (
           <div className="bg-red-900/20 border border-red-500/30 rounded-2xl p-4 text-red-300">
             Invalid download link. Please contact{" "}
-            <a href="mailto:support@examresource.in" className="text-orange-400 underline">
-              support@examresource.in
+            <a href="https://wa.me/919355225925" target="_blank" rel="noopener noreferrer" className="text-orange-400 underline font-bold">
+              WhatsApp Support: +91 9355225925
             </a>
           </div>
         )}
